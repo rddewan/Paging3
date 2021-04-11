@@ -26,11 +26,15 @@ class MainActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav?.setupWithNavController(navController)
         /*
-        he set of destinations by id considered at the top level of your information hierarchy.
+        The set of destinations by id considered at the top level of your information hierarchy.
         The Up button will not be displayed when on these destinations.
          */
         val appBarConfiguration = AppBarConfiguration(
-                setOf(R.id.nav_home,R.id.nav_flow,R.id.nav_rxjava)
+                setOf(R.id.nav_home,
+                    R.id.nav_flow,
+                    R.id.nav_flow_rm,
+                    R.id.nav_rxjava,
+                    R.id.nav_rxjava_rm)
         )
         /*
         By calling this method, the title in the action bar will automatically be updated when
