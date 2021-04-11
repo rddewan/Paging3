@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.richarddewan.todo_paging3.ui.fragment.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/nav_flow"
+        android:name="com.richarddewan.todo_paging3.ui.fragment.flow.FlowFragment"
+        android:label="FlowFragment" />
+    <fragment
+        android:id="@+id/nav_rxjava"
+        android:name="com.richarddewan.todo_paging3.ui.fragment.rxjava.RxJavaFragment"
+        android:label="RxJavaFragment" />
+    <fragment
+        android:id="@+id/nav_flow_rm"
+        android:name="com.richarddewan.todo_paging3.ui.fragment.flowtremotemediator.FlowRemoteMediatorFragment"
+        android:label="FlowRemoteMediator" />
+    <fragment
+        android:id="@+id/nav_rxjava_rm"
+        android:name="com.richarddewan.todo_paging3.ui.fragment.rxjavaremotemediator.RxJavaRemoteMediatorFragment"
+        android:label="RxJavaRemoteMediator" />
+</navigation>
