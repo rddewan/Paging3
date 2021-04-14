@@ -64,9 +64,7 @@ class FlowTaskRemoteMediatorUiModelAdaptor : PagingDataAdapter<UiModel, Recycler
         return  when(getItem(position)) {
             is UiModel.TaskItem -> R.layout.task_list_view
             is UiModel.SeparatorItem -> R.layout.separator_view_item
-            null -> {
-                throw UnsupportedOperationException("Unknown view")
-            }
+            else -> throw UnsupportedOperationException("Unknown view")
         }
     }
 
